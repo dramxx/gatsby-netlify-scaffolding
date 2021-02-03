@@ -303,7 +303,7 @@ a:focus {
 }
 
 .menu-link:hover {
-  color: hotpink;
+  color: var(--color-primary);
 }
 
 /************************************************************************

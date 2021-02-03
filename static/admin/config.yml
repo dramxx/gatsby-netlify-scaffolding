@@ -23,23 +23,23 @@ collections:
         file: "site/settings/contact_info.json"
         fields:
           - label: "Phone"
-            name: "phone"
+            name: "contact_info_phone"
             widget: "string"
 
           - label: "Email"
-            name: "email"
+            name: "contact_info_email"
             widget: "string"
 
           - label: "Address"
-            name: "address"
+            name: "contact_info_address"
             widget: "object"
             fields:
               - label: "City"
-                name: "city"
+                name: "contact_info_city"
                 widget: "string"
 
               - label: "Street"
-                name: "street"
+                name: "contact_info_street"
                 widget: "string"
       ############################
       # SOCIAL NETWORKS
@@ -124,15 +124,15 @@ collections:
       # LANDING COMPONENT
       ############################
       - label: "Heading"
-        name: "heading"
+        name: "landing_page_heading"
         widget: "string"
 
       - label: "Subheading"
-        name: "subheading"
+        name: "landing_page_subheading"
         widget: "string"
 
       - label: "Background Image"
-        name: "background-image"
+        name: "landing_page_background-image"
         widget: "image"
         media_library:
           config:
@@ -145,18 +145,62 @@ collections:
         widget: "list"
         fields:
           - label: "Benefit"
-            name: "benefit"
+            name: "landing_page_benefit"
             widget: "object"
             fields:
               - label: "Benefit Name"
-                name: "benefit_name"
+                name: "landing_page_benefit_name"
                 widget: "string"
               - label: "Benefit Description"
-                name: "benefit_description"
+                name: "landing_page_benefit_description"
                 widget: "string"
               - label: "Benefit Image"
-                name: "benefit_image"
+                name: "landing_page_benefit_image"
                 widget: "image"
                 media_library:
                   config:
                     multiple: true
+  ########################################################
+  #
+  # PAGE 1
+  #
+  ########################################################
+  - name: "page_1"
+    label: "Page 1"
+    folder: "content/pages"
+    media_folder: ""
+    public_folder: ""
+    path: "page_1/index"
+    slug: "index"
+    create: true
+    editor:
+      preview: false
+    fields:
+      ############################
+      # LANDING COMPONENT
+      ############################
+      - label: "Heading"
+        name: "page_1_heading"
+        widget: "string"
+  ########################################################
+  #
+  # PAGE 2
+  #
+  ########################################################
+  - name: "page_2"
+    label: "Page 2"
+    folder: "content/pages"
+    media_folder: ""
+    public_folder: ""
+    path: "page_2/index"
+    slug: "index"
+    create: true
+    editor:
+      preview: false
+    fields:
+      ############################
+      # LANDING COMPONENT
+      ############################
+      - label: "Heading"
+        name: "page_2_heading"
+        widget: "string"

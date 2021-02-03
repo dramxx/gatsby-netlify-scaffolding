@@ -7,18 +7,152 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  ########################################################
+  #
+  # SETTINGS
+  #
+  ########################################################
+  # - name: "settings"
+  #   label: "Settings"
+  #   file: "site/settings/contact_info.json"
+  #   fields:
+  #     - label: "Phone"
+  #       name: "phone"
+  #       widget: "string"
+
+  #     - label: "Email"
+  #       name: "email"
+  #       widget: "string"
+
+  #     - label: "Address"
+  #       name: "address"
+  #       widget: "object"
+  #       fields:
+  #         - label: "City"
+  #           name: "city"
+  #           widget: "string"
+
+  #         - label: "Street"
+  #           name: "street"
+  #           widget: "string"
+
+  ########################################################
+  #
+  # BLOG
+  #
+  ########################################################
   - name: "blog"
     label: "Blog"
     folder: "content/blog"
-    create: true
-    slug: "index"
     media_folder: ""
     public_folder: ""
     path: "{{title}}/index"
+    slug: "index"
+    create: true
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Description"
+        name: "description"
+        widget: "string"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  ########################################################
+  #
+  # LANDING PAGE
+  #
+  ########################################################
+  # - name: "landing_page"
+  #   label: "Landing Page"
+  #   folder: "content/pages"
+  #   media_folder: ""
+  #   public_folder: ""
+  #   path: "landing/index"
+  #   slug: "index"
+  #   create: true
+  #   editor:
+  #     preview: false
+  #   fields:
+  ############################
+  # LANDING COMPONENT
+  ############################
+  # - label: "Heading"
+  #   name: "heading"
+  #   widget: "string"
+
+  # - label: "Subheading"
+  #   name: "subheading"
+  #   widget: "string"
+
+  # - label: "Background Image"
+  #   name: "background-image"
+  #   widget: "image"
+  #   media_library:
+  #     config:
+  #       multiple: true
+  ############################
+  # BENEFITS COMPONENT
+  ############################
+  # - label: "Benefits"
+  #   name: "benefits"
+  #   widget: "list"
+  #   fields:
+  #     - label: "Benefit 1"
+  #       name: "benefit_1"
+  #       widget: "object"
+  #       fields:
+  #         - label: "Benefit 1 Name"
+  #           name: "benefit_1_name"
+  #           widget: "string"
+  #         - label: "Benefit 1 Description"
+  #           name: "benefit_1_description"
+  #           widget: "string"
+  #         - label: "Benefit 1 Image"
+  #           name: "benefit_1_image"
+  #           widget: "image"
+  #           media_library:
+  #             config:
+  #               multiple: true
+  #     - label: "Benefit 2"
+  #       name: "benefit_2"
+  #       widget: "object"
+  #       fields:
+  #         - label: "Benefit 2 Name"
+  #           name: "benefit_2_name"
+  #           widget: "string"
+  #         - label: "Benefit 2 Description"
+  #           name: "benefit_2_description"
+  #           widget: "string"
+  #         - label: "Benefit 2 Image"
+  #           name: "benefit_2_image"
+  #           widget: "image"
+  #           media_library:
+  #             config:
+  #               multiple: true
+  #     - label: "Benefit 3"
+  #       name: "benefit_3"
+  #       widget: "object"
+  #       fields:
+  #         - label: "Benefit 3 Name"
+  #           name: "benefit_3_name"
+  #           widget: "string"
+  #         - label: "Benefit 3 Description"
+  #           name: "benefit_3_description"
+  #           widget: "string"
+  #         - label: "Benefit 3 Image"
+  #           name: "benefit_3_image"
+  #           widget: "image"
+  #           media_library:
+  #             config:
+  #               multiple: true

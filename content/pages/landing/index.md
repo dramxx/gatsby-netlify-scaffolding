@@ -10,4 +10,12 @@ benefits:
       benefit_name: young dynamic team
       benefit_description: hell yea
       benefit_image: dma.jpg
+  - benefit:
+      benefit_name: coffee
+      benefit_description: coffee
+      benefit_image: dma.jpg
+  - benefit:
+      benefit_name: thats it
+      benefit_description: ...
+      benefit_image: dma.jpg
 ---

@@ -12,29 +12,65 @@ collections:
   # SETTINGS
   #
   ########################################################
-  # - name: "settings"
-  #   label: "Settings"
-  #   file: "site/settings/contact_info.json"
-  #   fields:
-  #     - label: "Phone"
-  #       name: "phone"
-  #       widget: "string"
+  - name: "settings"
+    label: "Settings"
+    files:
+      ############################
+      # CONTACT INFO
+      ############################
+      - label: "Contact Info"
+        name: "contact_info"
+        file: "site/settings/contact_info.json"
+        fields:
+          - label: "Phone"
+            name: "phone"
+            widget: "string"
 
-  #     - label: "Email"
-  #       name: "email"
-  #       widget: "string"
+          - label: "Email"
+            name: "email"
+            widget: "string"
 
-  #     - label: "Address"
-  #       name: "address"
-  #       widget: "object"
-  #       fields:
-  #         - label: "City"
-  #           name: "city"
-  #           widget: "string"
+          - label: "Address"
+            name: "address"
+            widget: "object"
+            fields:
+              - label: "City"
+                name: "city"
+                widget: "string"
 
-  #         - label: "Street"
-  #           name: "street"
-  #           widget: "string"
+              - label: "Street"
+                name: "street"
+                widget: "string"
+      ############################
+      # SOCIAL NETWORKS
+      ############################
+      - label: "Social Networks"
+        name: "social_networks"
+        file: "site/settings/social_networks.json"
+        fields:
+          - label: "Facebook"
+            name: "facebook"
+            widget: "object"
+            fields:
+              - label: "Url"
+                name: "url"
+                widget: "string"
+
+          - label: "Instagram"
+            name: "instagram"
+            widget: "object"
+            fields:
+              - label: "Url"
+                name: "url"
+                widget: "string"
+
+          - label: "Linked In"
+            name: "linked_in"
+            widget: "object"
+            fields:
+              - label: "Url"
+                name: "url"
+                widget: "string"
 
   ########################################################
   #
@@ -73,86 +109,54 @@ collections:
   # LANDING PAGE
   #
   ########################################################
-  # - name: "landing_page"
-  #   label: "Landing Page"
-  #   folder: "content/pages"
-  #   media_folder: ""
-  #   public_folder: ""
-  #   path: "landing/index"
-  #   slug: "index"
-  #   create: true
-  #   editor:
-  #     preview: false
-  #   fields:
-  ############################
-  # LANDING COMPONENT
-  ############################
-  # - label: "Heading"
-  #   name: "heading"
-  #   widget: "string"
+  - name: "landing_page"
+    label: "Landing Page"
+    folder: "content/pages"
+    media_folder: ""
+    public_folder: ""
+    path: "landing/index"
+    slug: "index"
+    create: false
+    editor:
+      preview: false
+    fields:
+      ############################
+      # LANDING COMPONENT
+      ############################
+      - label: "Heading"
+        name: "heading"
+        widget: "string"
 
-  # - label: "Subheading"
-  #   name: "subheading"
-  #   widget: "string"
+      - label: "Subheading"
+        name: "subheading"
+        widget: "string"
 
-  # - label: "Background Image"
-  #   name: "background-image"
-  #   widget: "image"
-  #   media_library:
-  #     config:
-  #       multiple: true
-  ############################
-  # BENEFITS COMPONENT
-  ############################
-  # - label: "Benefits"
-  #   name: "benefits"
-  #   widget: "list"
-  #   fields:
-  #     - label: "Benefit 1"
-  #       name: "benefit_1"
-  #       widget: "object"
-  #       fields:
-  #         - label: "Benefit 1 Name"
-  #           name: "benefit_1_name"
-  #           widget: "string"
-  #         - label: "Benefit 1 Description"
-  #           name: "benefit_1_description"
-  #           widget: "string"
-  #         - label: "Benefit 1 Image"
-  #           name: "benefit_1_image"
-  #           widget: "image"
-  #           media_library:
-  #             config:
-  #               multiple: true
-  #     - label: "Benefit 2"
-  #       name: "benefit_2"
-  #       widget: "object"
-  #       fields:
-  #         - label: "Benefit 2 Name"
-  #           name: "benefit_2_name"
-  #           widget: "string"
-  #         - label: "Benefit 2 Description"
-  #           name: "benefit_2_description"
-  #           widget: "string"
-  #         - label: "Benefit 2 Image"
-  #           name: "benefit_2_image"
-  #           widget: "image"
-  #           media_library:
-  #             config:
-  #               multiple: true
-  #     - label: "Benefit 3"
-  #       name: "benefit_3"
-  #       widget: "object"
-  #       fields:
-  #         - label: "Benefit 3 Name"
-  #           name: "benefit_3_name"
-  #           widget: "string"
-  #         - label: "Benefit 3 Description"
-  #           name: "benefit_3_description"
-  #           widget: "string"
-  #         - label: "Benefit 3 Image"
-  #           name: "benefit_3_image"
-  #           widget: "image"
-  #           media_library:
-  #             config:
-  #               multiple: true
+      - label: "Background Image"
+        name: "background-image"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
+      ############################
+      # BENEFITS COMPONENT
+      ############################
+      - label: "Benefits"
+        name: "benefits"
+        widget: "list"
+        fields:
+          - label: "Benefit"
+            name: "benefit"
+            widget: "object"
+            fields:
+              - label: "Benefit Name"
+                name: "benefit_name"
+                widget: "string"
+              - label: "Benefit Description"
+                name: "benefit_description"
+                widget: "string"
+              - label: "Benefit Image"
+                name: "benefit_image"
+                widget: "image"
+                media_library:
+                  config:
+                    multiple: true

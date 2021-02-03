@@ -4,5 +4,11 @@
   "address": {
     "city": "Bratislava",
     "street": "Jesenna 6"
+  },
+  "contact_info_phone": "+421948126333",
+  "contact_info_email": "drahoslav.madar@gmail.com",
+  "contact_info_address": {
+    "contact_info_city": "Bratislava",
+    "contact_info_street": "Jesenna 6"
   }
 }

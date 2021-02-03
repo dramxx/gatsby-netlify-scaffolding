@@ -35,4 +35,5 @@ benefits:
       landing_page_benefit_name: "3"
       landing_page_benefit_description: three
       landing_page_benefit_image: dma.jpg
+page_1_heading: Welcome from Page 1
 ---

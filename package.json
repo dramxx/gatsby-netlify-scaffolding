@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "gatsby-netlify-cms-scaffolding",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "description": "A starter for a site powered by Gatsby and Netlify Cms",
+  "version": "1.0.0",
+  "author": "dma",
   "dependencies": {
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",

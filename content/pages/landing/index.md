@@ -3,13 +3,15 @@ heading: Hello from Page 2
 subheading: Live-edge pickled biodiesel, tbh kale chips kogi fixie keytar
   microdosing palo santo. Succulents brunch glossier air plant, tbh freegan
   pabst irony keffiyeh 8-bit
-background_image: photo-1494253109108-2e30c049369b.jpg
-landing_page_heading: Normcore wolf street art
+page_1_heading: Welcome from Page 1
+landing_page_background-image: photo-1494253109108-2e30c049369b.jpg
+page_2_heading: Welcome from Page 2
 landing_page_subheading: Waistcoat readymade cred you probably haven't heard of
   them health goth hexagon. Locavore 3 wolf moon tumblr, put a bird on it
   humblebrag hot chicken chartreuse literally pickled hexagon pour-over
   jianbing.
-landing_page_background-image: photo-1494253109108-2e30c049369b.jpg
+background_image: photo-1494253109108-2e30c049369b.jpg
+landing_page_heading: Normcore wolf street art
 benefits:
   - benefit:
       benefit_name: young dynamic team
@@ -35,5 +37,4 @@ benefits:
       landing_page_benefit_name: "3"
       landing_page_benefit_description: three
       landing_page_benefit_image: dma.jpg
-page_1_heading: Welcome from Page 1
 ---

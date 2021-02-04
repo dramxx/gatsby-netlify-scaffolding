@@ -1,0 +1,206 @@
+backend:
+  name: github
+  repo: dramxx/gatsby-netlify-scaffolding
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  ########################################################
+  #
+  # SETTINGS
+  #
+  ########################################################
+  - name: "settings"
+    label: "Settings"
+    files:
+      ############################
+      # CONTACT INFO
+      ############################
+      - label: "Contact Info"
+        name: "contact_info"
+        file: "site/settings/contact_info.json"
+        fields:
+          - label: "Phone"
+            name: "contact_info_phone"
+            widget: "string"
+
+          - label: "Email"
+            name: "contact_info_email"
+            widget: "string"
+
+          - label: "Address"
+            name: "contact_info_address"
+            widget: "object"
+            fields:
+              - label: "City"
+                name: "contact_info_city"
+                widget: "string"
+
+              - label: "Street"
+                name: "contact_info_street"
+                widget: "string"
+      ############################
+      # SOCIAL NETWORKS
+      ############################
+      - label: "Social Networks"
+        name: "social_networks"
+        file: "site/settings/social_networks.json"
+        fields:
+          - label: "Facebook"
+            name: "facebook"
+            widget: "object"
+            fields:
+              - label: "Url"
+                name: "url"
+                widget: "string"
+
+          - label: "Instagram"
+            name: "instagram"
+            widget: "object"
+            fields:
+              - label: "Url"
+                name: "url"
+                widget: "string"
+
+          - label: "Linked In"
+            name: "linked_in"
+            widget: "object"
+            fields:
+              - label: "Url"
+                name: "url"
+                widget: "string"
+
+  ########################################################
+  #
+  # BLOG
+  #
+  ########################################################
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
+    slug: "index"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Description"
+        name: "description"
+        widget: "string"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  ########################################################
+  #
+  # LANDING PAGE
+  #
+  ########################################################
+  - name: "landing_page"
+    label: "Landing Page"
+    folder: "content/pages"
+    media_folder: ""
+    public_folder: ""
+    path: "landing/index"
+    slug: "index"
+    create: false
+    editor:
+      preview: false
+    fields:
+      ############################
+      # LANDING COMPONENT
+      ############################
+      - label: "Heading"
+        name: "landing_page_heading"
+        widget: "string"
+
+      - label: "Subheading"
+        name: "landing_page_subheading"
+        widget: "string"
+
+      - label: "Background Image"
+        name: "landing_page_background-image"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
+      ############################
+      # BENEFITS COMPONENT
+      ############################
+      - label: "Benefits"
+        name: "benefits"
+        widget: "list"
+        fields:
+          - label: "Benefit"
+            name: "landing_page_benefit"
+            widget: "object"
+            fields:
+              - label: "Benefit Name"
+                name: "landing_page_benefit_name"
+                widget: "string"
+              - label: "Benefit Description"
+                name: "landing_page_benefit_description"
+                widget: "string"
+              - label: "Benefit Image"
+                name: "landing_page_benefit_image"
+                widget: "image"
+                media_library:
+                  config:
+                    multiple: true
+  ########################################################
+  #
+  # PAGE 1
+  #
+  ########################################################
+  - name: "page_1"
+    label: "Page 1"
+    folder: "content/pages"
+    media_folder: ""
+    public_folder: ""
+    path: "page_1/index"
+    slug: "index"
+    create: true
+    editor:
+      preview: false
+    fields:
+      ############################
+      # LANDING COMPONENT
+      ############################
+      - label: "Heading"
+        name: "page_1_heading"
+        widget: "string"
+  ########################################################
+  #
+  # PAGE 2
+  #
+  ########################################################
+  - name: "page_2"
+    label: "Page 2"
+    folder: "content/pages"
+    media_folder: ""
+    public_folder: ""
+    path: "page_2/index"
+    slug: "index"
+    create: true
+    editor:
+      preview: false
+    fields:
+      ############################
+      # LANDING COMPONENT
+      ############################
+      - label: "Heading"
+        name: "page_2_heading"
+        widget: "string"

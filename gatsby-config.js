@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/gatsby-netlify-scaffolding",
   siteMetadata: {
     title: `Gatsby + Netlify CMS`,
     author: {
@@ -33,6 +34,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-relative-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {

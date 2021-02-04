@@ -1,3 +1,1 @@
-```
-  yarn add netlify-cms-app gatsby-plugin-netlify-cms
-```
+https://dramxx.github.io/gatsby-netlify-scaffolding/
